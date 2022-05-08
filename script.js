@@ -10,9 +10,8 @@ var buttonColours=["red","blue","green","yellow"]
 
 
 var level=0;
-$(document).keypress(function(event){
-    console.log(event.key)
-    if(started!=true){
+$(document).keypress(function(){
+    if(!started){
     $("h1").text("Level-"+level);
     nextSequence();
     started=true;
@@ -58,7 +57,7 @@ else{
 }
 
 function nextSequence(){
-    console.log(use)
+   
     userClickedPattern=[];
     level+=1;
     $("h1").text("Level-"+level);
