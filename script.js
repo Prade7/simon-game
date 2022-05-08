@@ -58,7 +58,7 @@ else{
 }
 
 function nextSequence(){
-    console.log(userClickedPattern)
+    console.log(use)
     userClickedPattern=[];
     level+=1;
     $("h1").text("Level-"+level);
